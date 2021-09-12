@@ -1,0 +1,176 @@
+
+/* GLOBAL */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--pale-blue);
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* TOP HALF */
+
+.top {
+    width: 100%;
+    margin: 0 auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.top img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* BOTTOM HALF */
+
+.container {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #fff;
+    margin: 5rem auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 5px 10px 10px hsl(221, 29%, 80%);
+    width: 88%;
+    max-width: 375px;
+}
+
+.summary {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.summary h1 {
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+
+.desc p {
+    margin-top: 1rem;
+    color: var(--desaturated-blue);
+    text-align: center;
+    font-size: 1rem;
+}
+
+.plan {
+    align-items: center;
+    margin: 1rem auto;
+    background-color: var(--very-pale-blue);
+    width: 90%;
+    display: flex;
+    padding: 1em;
+    border-radius: 1rem;
+}
+
+.icon-music {
+    flex: 1;
+}
+
+.icon-music img {
+    display: block;
+}
+
+.price {
+    flex: 4;
+    text-align: center;
+}
+
+.change {
+    flex: 2;
+    text-align: right;
+}
+
+.price h4 {
+    color: var(--dark-blue);
+    font-size: 1rem;
+}
+
+.price p {
+    color: var(--desaturated-blue);
+}
+
+
+ /* BUTTONS */
+
+button {
+    border: none;
+    border-radius: 10px;
+    font-family: inherit;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+.btn-change {
+    background-color: transparent;
+    text-decoration: underline;
+    color: var(--bright-blue);
+    font-weight:700;
+}
+
+
+
+.btn-primary {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-large {
+    width: 90%;
+    padding: 1rem;
+    margin: 1rem auto;
+    background-color: var(--bright-blue);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    box-shadow: 5px 10px 10px hsl(221, 29%, 80%);
+}
+
+.btn-small {
+    width: 50%;
+    margin: 1rem auto 3rem;
+    background-color: transparent;
+    font-size: 1rem;
+    color: var(--desaturated-blue);
+    font-weight: 700;
+}
+
+
+/* ATTRIBUTION */
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* MEDIA QUERIES */
+
+@media (min-width: 1440px) {
+    body {
+        background: url("../images/pattern-background-desktop.svg") no-repeat center -350px/cover;
+        background-color: var(--pale-blue);
+    }
+
+}
