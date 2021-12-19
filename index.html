@@ -9,40 +9,48 @@
   
   <title>Frontend Mentor | Order summary card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
 <body>
-  <div class="container">
-    <div class="top">
-      <img src="images/illustration-hero.svg" alt="illustration hero">
-    </div>
-      <div class="summary">
-        <h1>Order Summary</h1>
-      </div>
-      <div class="desc">
-        <p>You can now listen to millions of <br>songs, audiobooks, and podcasts on <br>any device anywhere you like!</p>
-      </div>
-      <div class="plan">
-        <div class="icon-music">
-          <img src="images/icon-music.svg" alt="icon music">
-        </div>
-        <div class="price">
-          <h4>Annual Plan</h4>
-          <p>$59.99/year</p>
-        </div>
-        <div class="change">
-          <button class="btn btn-change">Change</button>
-        </div>
+  <!-- <main> -->
+    <div class="card">
+
+      <div class="card__top">
+        <img src="images/illustration-hero.svg" alt="woman listening to music on mobile device">
       </div>
 
-      <div class="btn-primary">
-        <button class="btn-large">Proceed to Payment</button>
+      <div class="card__bottom">
+
+
+        <div class="card__header text-align">
+          <h1>Order Summary</h1>
+          <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+        </div>
+
+        <div class="card__plan">
+
+          <div class="plan--left">
+            <img src="images/icon-music.svg" alt="" aria-hidden="true">
+            <div class="plan--left-text">
+              <span>Annual Plan</span>
+              <p>$59.99/year</p>
+          </div>
+          
+          </div>
+          <div class="plan--right">
+            <a href="#">Change</a>
+          </div>
+
+        </div>
+
+      <div class="payment">
+        <button class="btn-large" type="submit">Proceed to Payment</button>
+
         <button class="btn-small">Cancel Order</button>
       </div>
-      <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="https://instagram.com/kenreeb" target="__blank">Ken Reibman</a>.
+
       </div>
-  </div>
+
+    </div>
+  <!-- </main> -->
 </body>
 </html>
