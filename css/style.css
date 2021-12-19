@@ -226,6 +226,11 @@ body {
   margin-top: 1.6rem;
 }
 
+.btn-large:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
 .btn-small {
   font-weight: 700;
   color: var(--desaturated-blue);
